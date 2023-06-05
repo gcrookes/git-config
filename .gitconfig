@@ -1,0 +1,14 @@
+[safe]
+	directory = /home/gcrookes/orientation/web-core
+[init]
+	defaultBranch = main
+[alias]
+	lg = log --graph --oneline --decorate
+	ca = commit -am
+	prm = pull --rebase origin main
+	s = status
+	a = add **/
+[include]
+    path = ~/git-personal.conf
+[includeIf "gitdir:~/child-friendly/"]
+    path = ~/git-work.conf
